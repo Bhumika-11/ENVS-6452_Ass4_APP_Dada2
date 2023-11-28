@@ -1,5 +1,5 @@
-# ENVS-6452_Ass4_APP_Dada2
-This is an amplicon processing pipeline for my assignment.
+```r
+# ENVS-6452_Ass4_APP_Dada2-This is an amplicon processing pipeline for my assignment.
 
 # Loading all the required libraries
 
@@ -154,7 +154,7 @@ p<- plot_bar (ps)
 #add ggplot over it
 
 
-# change to dataframe for plooting graph with ggplot2
+# change to dataframe for ploting graph with ggplot2
 ps.table <-psmelt(ps)
 
 # use factor$ command-take column phylum 
@@ -173,3 +173,5 @@ ps.proptable$Phylum <-factor(ps.proptable$Phylum)
 
 # ploting graph
 ggplot (data=ps.proptable, mapping=aes (x = Sample, y= Abundance))+ geom_bar(aes(fill=Phylum), stat= "identity",position="stack")
+
+```
